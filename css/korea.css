@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+img, object, embed, video {
+	max-width: 100%;
+}
+body {
+	font-family:"Malgun Gothic", "AppleSDGothicNeo", "Dotum", "Meiryo UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+nav{
+background-color: rgb(252, 252, 252);
+align-items: center;
+margin: 0;
+padding: 0;
+}
+nav li{
+	display:inline-block;
+	width: 98px;
+	background-image: url(../images/byg_m.jpg);
+	text-align:center;
+	margin: 0.3rem auto;
+	list-style-type: none;
+  padding: 0.1rem;
+}
+nav ul li a{
+	display: block;
+	line-height: 1.6;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow: -1px -2px 3px #808080;
+	font-weight: 700;
+}
+table{
+	width: 100%;
+	border: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+table tr{
+	text-align: center;
+}
+table tr td{
+	text-align: center;
+}
+table ul li{
+	list-style-type: none;
+}
+footer{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 16px;
+}
+footer b{
+	margin-top: 1em;
+	font-weight: 800;
+}
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+#header1 {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-attachment: scroll;
+	background-image: url(../images/byg_m.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+/* タブレットレイアウト : 481 px ～ 768 px。モバイルレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+table{
+	width: 90.675%;
+	border: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+table tr{
+	text-align: center;
+}
+}
+
+/* デスクトップレイアウト : 769 px ～最大 1232 px。モバイルレイアウトとタブレットレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+table{
+	width: 88.2%;
+	border: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+table tr{
+	text-align: center;
+	}
+}
